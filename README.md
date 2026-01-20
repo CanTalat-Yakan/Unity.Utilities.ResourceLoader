@@ -26,7 +26,7 @@ Install the Unity Essentials entry package via Unity's Package Manager, then ins
 
 # Asset Resolver
 
-> Quick overview: Tiny, deterministic asset lookup and prefab spawning helper that tries Addressables first, then Resources, with optional caching. Includes an editor helper that spawns prefabs via `PrefabUtility` + Undo.
+> Quick overview: Typed, deterministic asset lookup for runtime addressable first loader, with optional caching. Includes an editor spawner that finds and unpacks prefabs by name.
 
 `AssetResolver` exists to make asset access consistent across your project:
 - One call site (`AssetResolver.TryGet<T>(...)`) instead of scattered Addressables/Resources code
